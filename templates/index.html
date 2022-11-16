@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of flags</title>
+</head>
+<body>
+    <h1>Список стран с флагами</h1>
+{% for key, value in get_flags.items() %}
+<p>{{key}}<img src={{value}}></p>
+{% endfor %}
+
+</body>
+</html>
