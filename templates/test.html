@@ -5,6 +5,17 @@
     <title>Test</title>
 </head>
 <body>
-
+    <form action = "/response">
+        <h2>Какой стране принадлежит этот флаг?</h2>
+        <br>
+        <img src={{ task["question"] }}>
+        <br>
+        {% for answer in task["answers"] %}
+        <input type="radio" name="answer" value="{{ answer }}">{{ answer }}
+            <br>
+        {% endfor %}
+                    <br>
+            <input type="submit">
+    </form>
 </body>
 </html>

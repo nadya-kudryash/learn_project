@@ -11,3 +11,8 @@ def get_flags():
     return final_dict
 
 # get_flags()
+
+def get_right_answer(d, link):
+    for key, value in d.items():
+        if value == link:
+            return key
